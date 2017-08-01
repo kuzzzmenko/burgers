@@ -1,0 +1,123 @@
+
+.reviews {
+  width: 100%;
+  min-height: 650px;
+  height: 100vh;
+}
+
+.reviews__list {
+  list-style: none;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+.reviews__item {
+  width: 25%;
+  height: 50vh;
+  position: relative;
+  filter: grayscale(1);
+
+}
+
+.reviews__comment {
+  display: none;
+  padding: 20px 33px 20px 20px;
+}
+
+.reviews__item:hover .reviews__comment {
+  display: block;
+  position: absolute;
+  top: 50px;
+  z-index: 9999;
+  width: 400px;
+}
+
+.reviews__item:hover .reviews__photo {
+  filter: brightness(50%);
+}
+
+.reviews__comment-name {
+  font-family: 'Gagalin';
+  font-size: 14px;
+  color: #ffffff;
+  margin-bottom: 20px;
+  display: block;
+}
+
+.reviews__comment-text {
+  font-family: 'Ubuntu';
+  font-size: 14px;
+  color: #ffffff;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+  display: block;
+  width: 70%;
+  line-height: 25px;
+  font-weight: 300;
+}
+
+.reviews__comment-link {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #fff;
+  font-family: Ubuntu;
+  font-size: 13px;
+  font-weight: 500;
+  padding: 11px 15px 11px;
+  border-radius: 5px;
+  background-color: #2f3234;
+  cursor: pointer;
+  &:hover {
+    background-color: #1f2122;
+  }
+}
+
+
+.photo1{
+  background-image: url('img/reviews/photo-1.jpg');
+  background-size: cover;
+  height: 415px;
+}
+
+.photo2 {
+  background-image: url('img/reviews/photo-2.jpg');
+  background-size: cover;
+  height: 415px;
+}
+
+.photo3 {
+  background-image: url('img/reviews/photo-3.jpg');
+  background-size: cover;
+  height: 415px;
+}
+
+.photo4 {
+  background-image: url('img/reviews/photo-4.jpg');
+  background-size: cover;
+  height: 415px;
+}
+
+.photo5 {
+  background-image: url('img/reviews/photo-5.jpg');
+  background-size: cover;
+  height: 415px;
+}
+
+.photo6 {
+  background-image: url('img/reviews/photo-6.jpg');
+  background-size: cover;
+  height: 415px;
+}
+
+.photo7 {
+  background-image: url('img/reviews/photo-7.jpg');
+  background-size: cover;
+  height: 415px;
+}
+
+.photo8{
+  background-image: url('img/reviews/photo-8.jpg');
+  background-size: cover;
+  height: 415px;
+}
