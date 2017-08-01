@@ -1,0 +1,116 @@
+@font-face { font-family: Gagalin; src: url("fonts/gagalin-regular-webfont.woff2") format("woff2"); font-weight: normal; font-style: normal; }
+@font-face { font-family: Lifehack; src: url("fonts/lifehack_medium-webfont.woff2") format("woff2"); font-weight: normal; font-style: normal; }
+@font-face { font-family: Ubuntu; src: url("fonts/ubuntu-b-webfont.woff2") format("woff2"); font-weight: bold; font-style: normal; }
+@font-face { font-family: Ubuntu; src: url("fonts/ubuntu-light-webfont.woff2") format("woff2"); font-weight: 300; font-style: normal; }
+@font-face { font-family: Ubuntu; src: url("fonts/ubuntu-medium-webfont.woff2") format("woff2"); font-weight: 700; font-style: normal; }
+@font-face { font-family: Ubuntu; src: url("fonts/ubuntu-regular-webfont.woff2") format("woff2"); font-weight: 500; font-style: normal; }
+body { margin: 0; padding: 0; font-family: 'Ubuntu', Arial, Helvetica, sans-serif; line-height: 1.42; color: #2f3234; }
+
+*, *::before, *::after { -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+body, html { height: 100%; }
+
+ul { margin: 0; padding: 0; list-style: none; }
+
+.wrapper { width: 100%; height: 100%; position: relative; min-height: 0; }
+
+.section-main { height: 100%; min-height: 650px; }
+
+.container { width: 940px; margin: 0 auto; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; }
+
+.section { height: 100vh; min-width: 940px; min-height: 650px; }
+
+.order { display: inline-block; min-width: 6.125rem; padding: 10px 17px; border-radius: 5px; background-color: #e25028; color: #fff; text-decoration: none; font-size: 13px; font-weight: 500; line-height: 1.42; text-transform: uppercase; -webkit-transition: .5s; transition: .5s; }
+.order:hover { background-color: #cb411b; }
+
+.points { position: fixed; top: 35%; right: 2.6%; z-index: 10; }
+
+.points__list { list-style: none; width: 100%; }
+
+.points__item { padding: 6px 8px 9px; }
+
+.points__link { display: block; background-color: white; width: 6px; height: 6px; border-radius: 50%; position: relative; cursor: pointer; }
+
+.points__link_active:before { content: ""; display: block; border: 1px solid white; width: 16px; height: 16px; border-radius: 50%; position: absolute; cursor: default; top: -6px; left: -6px; }
+
+.points__link:hover:before { content: ""; display: block; border: 1px solid white; width: 16px; height: 16px; border-radius: 50%; position: absolute; top: -6px; left: -6px; }
+
+.top { background-image: url("img/background/video-bg.jpg"); background-repeat: no-repeat; background-position: 50%; background-size: cover; position: relative; }
+
+.header { width: 100%; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; -webkit-box-align: center; -ms-flex-align: center; align-items: center; padding-top: 10px; }
+
+.header__logo { margin-right: auto; }
+
+.navigation { margin-right: 0.9375rem; }
+
+.navigation__list { margin: 0; padding: 0; }
+
+.navigation__item { display: inline-block; vertical-align: middle; white-space: nowrap; }
+.navigation__item:after { display: inline-block; vertical-align: middle; content: ' '; width: 5px; height: 5px; border-radius: 2.5px; background-color: #fff; margin: 0 12px; }
+.navigation__item:last-child:after { display: none; }
+
+.navigation__link { color: #ffffff; font-size: 13px; font-weight: 500; line-height: 1.42; text-transform: uppercase; text-decoration: none; display: inline-block; vertical-align: middle; -webkit-transition: .5s; transition: .5s; }
+.navigation__link:hover { font-size: 15px; }
+
+.main__container { height: 100%; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
+
+.content { width: 100%; display: -webkit-box; display: -ms-flexbox; display: flex; -ms-flex-wrap: wrap; flex-wrap: wrap; -webkit-box-flex: 1; -ms-flex-positive: 1; flex-grow: 1; -webkit-box-align: center; -ms-flex-align: center; align-items: center; padding-bottom: 15%; }
+
+.content__img, .content__about { -ms-flex-preferred-size: 50%; flex-basis: 50%; display: -webkit-box; display: -ms-flexbox; display: flex; }
+
+.content__img { -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
+
+.content__about { -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; padding-left: 10px; }
+
+.content__about-title { color: #f9b43b; font-family: 'Gagalin'; font-size: 72px; font-weight: 400; line-height: 1.42; margin: 0; padding-top: 60px; }
+
+.content__about-text { color: #ffffff; font-family: 'Lifehack'; font-size: 65px; font-weight: 500; line-height: 1; }
+
+.best { background: url("img/background/best-bg.jpg") no-repeat center center; background-size: cover; min-height: 650px; width: 100%; height: 100vh; }
+
+.best__title { text-align: center; padding-top: 60px; margin-bottom: 77px; color: #2f3234; font-family: 'Gagalin'; font-size: 72px; padding-left: 16px; }
+
+.best__list { list-style: none; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; }
+
+.best__item { text-align: center; width: 304px; margin-right: 21px; }
+
+.best__item-img { width: 46px; display: inline-block; }
+
+.best__item-title { display: -webkit-inline-box; display: -ms-inline-flexbox; display: inline-flex; color: #2f3234; font-family: 'Lifehack'; font-size: 24px; padding-left: 39px; margin-bottom: 0; }
+
+.best__item-text { font-weight: 300; font-size: 14px; line-height: 25px; padding-left: 12px; }
+
+.reviews { width: 100%; min-height: 650px; height: 100vh; }
+
+.reviews__list { list-style: none; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: start; -ms-flex-pack: start; justify-content: flex-start; -ms-flex-wrap: wrap; flex-wrap: wrap; }
+
+.reviews__item { width: 25%; height: 50vh; position: relative; -webkit-filter: grayscale(1); filter: grayscale(1); }
+
+.reviews__comment { display: none; padding: 20px 33px 20px 20px; }
+
+.reviews__item:hover .reviews__comment { display: block; position: absolute; top: 50px; z-index: 9999; }
+
+.reviews__item:hover .reviews__photo { -webkit-filter: brightness(50%); filter: brightness(50%); }
+
+.reviews__comment-name { font-family: 'Gagalin'; font-size: 14px; color: #ffffff; margin-bottom: 20px; display: block; }
+
+.reviews__comment-text { font-family: 'Ubuntu'; font-size: 14px; color: #ffffff; letter-spacing: 1px; margin-bottom: 20px; display: block; width: 70%; line-height: 25px; font-weight: 300; }
+
+.reviews__comment-link { text-decoration: none; text-transform: uppercase; color: #fff; font-family: Ubuntu; font-size: 13px; font-weight: 500; padding: 11px 15px 11px; border-radius: 5px; background-color: #2f3234; cursor: pointer; }
+.reviews__comment-link:hover { background-color: #1f2122; }
+
+.photo1 { background-image: url("img/reviews/photo-1.jpg"); background-size: cover; height: 415px; }
+
+.photo2 { background-image: url("img/reviews/photo-2.jpg"); background-size: cover; height: 415px; }
+
+.photo3 { background-image: url("img/reviews/photo-3.jpg"); background-size: cover; height: 415px; }
+
+.photo4 { background-image: url("img/reviews/photo-4.jpg"); background-size: cover; height: 415px; }
+
+.photo5 { background-image: url("img/reviews/photo-5.jpg"); background-size: cover; height: 415px; }
+
+.photo6 { background-image: url("img/reviews/photo-6.jpg"); background-size: cover; height: 415px; }
+
+.photo7 { background-image: url("img/reviews/photo-7.jpg"); background-size: cover; height: 415px; }
+
+.photo8 { background-image: url("img/reviews/photo-8.jpg"); background-size: cover; height: 415px; }
