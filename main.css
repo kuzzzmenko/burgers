@@ -1,9 +1,9 @@
-@font-face { font-family: 'Gagalin'; src: url("../../fonts/gagalin-regular-webfont.woff2") format("woff2"); font-weight: normal; font-style: normal; }
-@font-face { font-family: 'Lifehack'; src: url("../../fonts/lifehack_medium-webfont.woff2") format("woff2"); font-weight: normal; font-style: normal; }
-@font-face { font-family: 'Ubuntu'; src: url("../../fonts/ubuntu-b-webfont.woff2") format("woff2"); font-weight: bold; font-style: normal; }
-@font-face { font-family: 'Ubuntu'; src: url("../../fonts/ubuntu-light-webfont.woff2") format("woff2"); font-weight: 300; font-style: normal; }
-@font-face { font-family: 'Ubuntu'; src: url("../../fonts/ubuntu-medium-webfont.woff2") format("woff2"); font-weight: 700; font-style: normal; }
-@font-face { font-family: 'Ubuntu'; src: url("../../fonts/ubuntu-regular-webfont.woff2") format("woff2"); font-weight: 500; font-style: normal; }
+@font-face { font-family: 'Gagalin'; src: url("fonts/gagalin-regular-webfont.woff2") format("woff2"); font-weight: normal; font-style: normal; }
+@font-face { font-family: 'Lifehack'; src: url("fonts/lifehack_medium-webfont.woff2") format("woff2"); font-weight: normal; font-style: normal; }
+@font-face { font-family: 'Ubuntu'; src: url("fonts/ubuntu-b-webfont.woff2") format("woff2"); font-weight: bold; font-style: normal; }
+@font-face { font-family: 'Ubuntu'; src: url("fonts/ubuntu-light-webfont.woff2") format("woff2"); font-weight: 300; font-style: normal; }
+@font-face { font-family: 'Ubuntu'; src: url("fonts/ubuntu-medium-webfont.woff2") format("woff2"); font-weight: 700; font-style: normal; }
+@font-face { font-family: 'Ubuntu'; src: url("fonts/ubuntu-regular-webfont.woff2") format("woff2"); font-weight: 500; font-style: normal; }
 body { margin: 0; padding: 0; font-family: 'Ubuntu', Arial, Helvetica, sans-serif; line-height: 1.42; color: #2f3234; }
 
 *, *::before, *::after { -webkit-box-sizing: border-box; box-sizing: border-box; }
@@ -76,7 +76,7 @@ ul { margin: 0; padding: 0; list-style: none; }
 
 .reviews__comment { display: none; padding: 20px 33px 20px 20px; }
 
-.reviews__item:hover .reviews__comment { display: block; position: absolute; top: 50px; z-index: 9999; width: 400px; }
+.reviews__item:hover .reviews__comment { display: block; position: absolute; top: 50px; z-index: 9999; }
 
 .reviews__item:hover .reviews__photo { -webkit-filter: brightness(50%); filter: brightness(50%); }
 
@@ -102,3 +102,5 @@ ul { margin: 0; padding: 0; list-style: none; }
 .photo7 { background-image: url("img/reviews/photo-7.jpg"); background-size: cover; height: 415px; }
 
 .photo8 { background-image: url("img/reviews/photo-8.jpg"); background-size: cover; height: 415px; }
+
+/*# sourceMappingURL=main.css.map */
