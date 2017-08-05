@@ -7,30 +7,20 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="icon" type="image/x-icon" href="img/logo/favicon.ico">
   <link rel="stylesheet" href="normalize.css">
-  <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="css/main.css">
   <title>Магазин Бургеров</title>
 </head>
 
 <body>
   <div class="wrapper">
-    <div class="maincontent">
+    <div class="main-content">
   <section class="section top">
-    <div class="points"> 
-      <ul class="points__list">
-        <li class="points__item"><a class="points__link points__link_active" href=""></a></li>
-        <li class="points__item"><a class="points__link" href=""></a></li>
-        <li class="points__item"><a class="points__link" href=""></a></li>
-        <li class="points__item"><a class="points__link" href=""></a></li>
-        <li class="points__item"><a class="points__link" href=""></a></li>
-        <li class="points__item"><a class="points__link" href=""></a></li>
-        <li class="points__item"><a class="points__link" href=""></a></li>
-        <li class="points__item"><a class="points__link" href=""></a></li>
-      </ul>
-    </div>
     <div class="container main-container">
     <header class="header">
       <div class="header__logo">
-        <img src="img/logo/logo.png" alt="">
+        <a href="index.html" class="header__logo-link">
+          <img src="img/logo/logo.png" alt="">
+        </a>
       </div>
       <nav class="navigation">
         <ul class="navigation__list">
@@ -49,45 +39,39 @@
         <img src="img/logo/drops.png" alt="">
     </div>
       <div class="content__about">
-         <h2 class="content__about-title">Мы делаем</h2>
+         <div class="content__about-title">Мы делаем</div>
          <span class="content__about-text">натуральные бургеры</span>
       </div>
     </div>
-        <a class="arrow__next" href="">
-          <img src="img/logo/arrow-scroll.png" alt="">
+        <a class="arrow-next" href="">
+          <img src="img/logo/arrow-scroll.png" class="arrow-pic" alt="">
         </a>
     </div>
   </section>
 <section class="section best">
   <div class="container best-container">
-  <h2 class="best__title">мы лучшие</h2>
+  <div class="best__title">мы лучшие</div>
   <ul class="best__list">
     <li class="best__item">
       <div class="best__item-img">
-        <img src="img/logo/meat.png" alt="">
+        <img src="img/logo/meat.png" class="best-pic" alt="">
       </div>
-      <div class="best__item-body">
-      <h3 class="best__item-title">100% свежее мясо</h3>
+      <div class="best__item-title">100% свежее мясо</div>
       <p class="best__item-text">Драма представляет собой деструктивный цикл. Анапест представляет собой анапест. Ямб неравномерен.</p>
-    </div>
     </li>
     <li class="best__item">
       <div class="best__item-img">
       <img src="img/logo/hand.png" alt="">
       </div>
-    <div class="best__item-body">
-    <h3 class="best__item-title">Ручная сборка</h3>
+    <div class="best__item-title">Ручная сборка</div>
     <p class="best__item-text">Драма представляет собой деструктивный цикл. Анапест представляет собой анапест. Первое полустишие притягивает сюжетный реформаторский пафос.</p>
-    </div>
   </li>
     <li class="best__item">
       <div class="best__item-img">
         <img src="img/logo/natural.png" alt="">
       </div>
-      <div class="best__item-body">
-      <h3 class="best__item-title">Натуральные игредиенты</h3>
+      <div class="best__item-title">Натуральные ингредиенты</div>
       <p class="best__item-text">Драма представляет собой деструктивный цикл. Анапест представляет собой анапест.</p>
-      </div>
     </li>
   </ul>
   </div>
@@ -95,7 +79,7 @@
 <section class="section reviews">
     <ul class="reviews__list">
       <li class="reviews__item">
-        <div class="reviews__photo photo1"></div>
+        <div class="reviews__photo" style="background-image: url(img/reviews/photo-1.jpg)"></div>
         <div class="reviews__comment">
           <span class="reviews__comment-name">Константин Спилберг</span>
           <span class="reviews__comment-text">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</span>
@@ -103,7 +87,7 @@
         </div>
       </li>
       <li class="reviews__item">
-        <div class="reviews__photo photo2"></div>
+        <div class="reviews__photo" style="background-image: url(img/reviews/photo-2.jpg)"></div>
         <div class="reviews__comment">
             <span class="reviews__comment-name">Константин Спилберг</span>
                 <span class="reviews__comment-text">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</span>
@@ -111,7 +95,7 @@
         </div>
       </li>
       <li class="reviews__item">
-        <div class="reviews__photo photo3"></div>
+        <div class="reviews__photo" style="background-image: url(img/reviews/photo-3.jpg)"></div>
         <div class="reviews__comment">
           <span class="reviews__comment-name">Константин Спилберг</span>
           <span class="reviews__comment-text">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</span>
@@ -119,7 +103,7 @@
         </div>
       </li>
       <li class="reviews__item">
-        <div class="reviews__photo photo4"></div>
+        <div class="reviews__photo" style="background-image: url(img/reviews/photo-4.jpg)"></div>
         <div class="reviews__comment">
           <span class="reviews__comment-name">Константин Спилберг</span>
           <span class="reviews__comment-text">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</span>
@@ -127,7 +111,7 @@
         </div>
       </li>
       <li class="reviews__item">
-        <div class="reviews__photo photo5"></div>
+        <div class="reviews__photo" style="background-image: url(img/reviews/photo-5.jpg)"></div>
         <div class="reviews__comment">
           <span class="reviews__comment-name">Константин Спилберг</span>
           <span class="reviews__comment-text">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</span>
@@ -135,7 +119,7 @@
         </div>
       </li>
       <li class="reviews__item">
-        <div class="reviews__photo photo6"></div>
+        <div class="reviews__photo" style="background-image: url(img/reviews/photo-6.jpg)"></div>
         <div class="reviews__comment">
           <span class="reviews__comment-name">Константин Спилберг</span>
           <span class="reviews__comment-text">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</span>
@@ -143,7 +127,7 @@
         </div>
       </li>
       <li class="reviews__item">
-        <div class="reviews__photo photo7"></div>
+        <div class="reviews__photo" style="background-image: url(img/reviews/photo-7.jpg)"></div>
         <div class="reviews__comment">
           <span class="reviews__comment-name">Константин Спилберг</span>
           <span class="reviews__comment-text">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</span>
@@ -151,7 +135,7 @@
         </div>
       </li>
       <li class="reviews__item">
-        <div class="reviews__photo photo8"></div>
+        <div class="reviews__photo" style="background-image: url(img/reviews/photo-8.jpg)"></div>
         <div class="reviews__comment">
           <span class="reviews__comment-name">Константин Спилберг</span>
           <span class="reviews__comment-text">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</span>
@@ -161,6 +145,18 @@
      </ul>
 </section>
   </div>
+    <div class="points">
+      <ul class="points__list">
+        <li class="points__item"><a class="points__link points__link_active" href=""></a></li>
+        <li class="points__item"><a class="points__link" href=""></a></li>
+        <li class="points__item"><a class="points__link" href=""></a></li>
+        <li class="points__item"><a class="points__link" href=""></a></li>
+        <li class="points__item"><a class="points__link" href=""></a></li>
+        <li class="points__item"><a class="points__link" href=""></a></li>
+        <li class="points__item"><a class="points__link" href=""></a></li>
+        <li class="points__item"><a class="points__link" href=""></a></li>
+      </ul>
+    </div>
   </div>
 </body>
 

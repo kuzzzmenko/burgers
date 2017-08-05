@@ -1,5 +1,5 @@
 .top {
-  background-image: url('img/background/video-bg.jpg');
+  background-image: url('../img/background/video-bg.jpg');
   background-repeat: no-repeat;
   background-position: 50%;
   background-size: cover;
@@ -11,15 +11,25 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-top: 10px;
+  padding-top: 7px;
+  padding-left: 4px;
 }
 
 .header__logo {
   margin-right: auto;
 }
 
+.header__logo-link {
+  display: inline-block;
+}
+
+.header__btn {
+  width: 97px;
+  padding-left: 6px;
+}
+
 .navigation {
-  margin-right: rem(15px);
+  margin-right: 10px;
 }
 
 .navigation__list {
@@ -36,7 +46,7 @@
     vertical-align: middle;
     content: ' ';
     @include circle(5px, #fff);
-    margin: 0 12px;
+    margin: 0 14px;
   }
   &:last-child:after {
     display: none;
@@ -54,41 +64,42 @@
   vertical-align: middle;
   transition: .5s;
   &:hover {
-    font-size: 15px;
+    color: #f9b43b;
   }
 }
 
 
-.main__container {
-  height: 100%;
+.main-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  position: relative;
 }
 
 .content {
-  width: 100%;
   display: flex;
-  flex-wrap: wrap;
-  flex-grow: 1;
-  align-items: center;
-  padding-bottom: 15%;
+  flex: 1;
+  justify-content: center;
+  padding-bottom: 17%;
 }
 
 .content__img, .content__about {
   flex-basis: 50%;
   display: flex;
+  margin-right: 32px;
 }
 
 .content__img {
   align-items: center;
+  margin: 0 auto;
+  padding-left: 23px;
 }
 
 .content__about {
   flex-direction: column;
   justify-content: center;
-  padding-left: 10px;
+  padding-left: 13px;
 }
 
 .content__about-title {
@@ -97,8 +108,8 @@
   font-size: 72px;
   font-weight: 400;
   line-height: 1.42;
-  margin: 0;
-  padding-top: 60px;
+  padding-top: 64px;
+  margin-bottom: 5px;
 }
 
 .content__about-text {
@@ -107,4 +118,14 @@
   font-size: 65px;
   font-weight: 500;
   line-height: 1;
+}
+
+.arrow-next {
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  &:hover .arrow-pic {
+    transform: scale(1.5);
+    transition: 1s;
+  }
 }

@@ -20,6 +20,12 @@
 
 }
 
+.reviews__photo {
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%;
+}
 .reviews__comment {
   display: none;
   padding: 20px 33px 20px 20px;
@@ -28,8 +34,11 @@
 .reviews__item:hover .reviews__comment {
   display: block;
   position: absolute;
-  top: 50px;
+  top: 46px;
   z-index: 9999;
+  left: 23px;
+  padding: 0;
+  width: 319px;
 }
 
 .reviews__item:hover .reviews__photo {
@@ -48,11 +57,10 @@
   font-family: 'Ubuntu';
   font-size: 14px;
   color: #ffffff;
-  letter-spacing: 1px;
-  margin-bottom: 20px;
+  margin-bottom: 17px;
   display: block;
   width: 70%;
-  line-height: 25px;
+  line-height: 24px;
   font-weight: 300;
 }
 
@@ -72,51 +80,3 @@
   }
 }
 
-
-.photo1{
-  background-image: url('img/reviews/photo-1.jpg');
-  background-size: cover;
-  height: 415px;
-}
-
-.photo2 {
-  background-image: url('img/reviews/photo-2.jpg');
-  background-size: cover;
-  height: 415px;
-}
-
-.photo3 {
-  background-image: url('img/reviews/photo-3.jpg');
-  background-size: cover;
-  height: 415px;
-}
-
-.photo4 {
-  background-image: url('img/reviews/photo-4.jpg');
-  background-size: cover;
-  height: 415px;
-}
-
-.photo5 {
-  background-image: url('img/reviews/photo-5.jpg');
-  background-size: cover;
-  height: 415px;
-}
-
-.photo6 {
-  background-image: url('img/reviews/photo-6.jpg');
-  background-size: cover;
-  height: 415px;
-}
-
-.photo7 {
-  background-image: url('img/reviews/photo-7.jpg');
-  background-size: cover;
-  height: 415px;
-}
-
-.photo8{
-  background-image: url('img/reviews/photo-8.jpg');
-  background-size: cover;
-  height: 415px;
-}
