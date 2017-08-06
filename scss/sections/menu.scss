@@ -1,0 +1,108 @@
+.menu {
+  background-image: url('../img/background/menu/1.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+}
+
+.menu__title {
+  font-family: 'Gagalin';
+  font-size: 72px;
+  font-weight: normal;
+  text-transform: uppercase;
+  color: #fff;
+  position: absolute;
+  left: 10%;
+  top: 10%;
+}
+
+.menu__list {
+  display: flex;
+}
+
+.menu__item {
+  height: 100%;
+  &:hover {
+    .menu__content {
+
+    }
+  }
+}
+
+.menu-meat {
+  background-image: url('../img/background/menu/2.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: right;
+  width: 80px;
+  height: 100%;
+  position: relative;
+}
+
+.menu-meat__content-title {
+  font-family: 'Gagalin';
+  font-weight: normal;
+  font-size: 40px;
+  color: #fff;
+  transform: rotate(-90deg);
+  display: inline-block;
+  width: 5rem;
+  white-space: nowrap;
+  position: absolute;
+  top: 80%;
+}
+
+.menu-vegan {
+  background-image: url('../img/background/menu/3.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: right;
+  width: 80px;
+  height: 100%;
+  position: relative;
+}
+
+.menu-vegan__content-title {
+  font-family: 'Gagalin';
+  font-weight: normal;
+  font-size: 40px;
+  color: #fff;
+  transform: rotate(-90deg);
+  display: inline-block;
+  width: 5rem;
+  white-space: nowrap;
+  position: absolute;
+  top: 80%;
+}
+
+.menu-diet {
+  background-image: url('../img/background/menu/4.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: right;
+  width: 80px;
+  height: 100%;
+  position: relative;
+}
+
+.menu-diet__content-title {
+  font-family: 'Gagalin';
+  font-weight: normal;
+  font-size: 40px;
+  color: #fff;
+  transform: rotate(-90deg);
+  display: inline-block;
+  width: 5rem;
+  white-space: nowrap;
+  position: absolute;
+  top: 80%;
+}
+
+.menu__content {
+  font-family: 'Ubuntu';
+  font-weight: 300;
+  color: #fff;
+  background: rgba($black, .93);
+}

@@ -75,6 +75,7 @@
   justify-content: center;
   align-items: center;
   position: relative;
+  height: 100%;
 }
 
 .content {
@@ -103,13 +104,14 @@
 }
 
 .content__about-title {
-  color: #f9b43b;
+  color: $yellow;
   font-family: 'Gagalin';
   font-size: 72px;
   font-weight: 400;
   line-height: 1.42;
   padding-top: 64px;
   margin-bottom: 5px;
+  -webkit-font-smoothing: antialiased;
 }
 
 .content__about-text {
@@ -118,6 +120,7 @@
   font-size: 65px;
   font-weight: 500;
   line-height: 1;
+  -webkit-font-smoothing: antialiased;
 }
 
 .arrow-next {

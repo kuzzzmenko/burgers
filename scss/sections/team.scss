@@ -1,0 +1,126 @@
+.team {
+  background-image: url('../img/background/team-bg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.team__right {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 50%;
+  background: rgba($black, .93);
+  text-align: center;
+}
+
+.team__content {
+  width: 70%;
+}
+
+.team-title {
+  color: $yellow;
+  text-transform: uppercase;
+  font-family: 'Gagalin';
+  font-size: 72px;
+  font-weight: normal;
+  margin-bottom: 50px;
+}
+
+.team-acco__title {
+  font-family: 'Gagalin';
+  font-size: 14px;
+  font-weight: normal;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  text-align: left;
+  margin-left: 80px;
+  cursor: pointer;
+  &:before {
+    content: "";
+    width: 0px;
+    height: 0px;
+    border: 7px solid transparent;
+    border-top-color: $yellow;
+    border-bottom: none;
+    margin-right: 10px;
+  }
+}
+
+.team-acco__content {
+  padding-top: 10px;
+  overflow: hidden;
+  height: 0;
+}
+
+.team-acco__item {
+  margin-bottom: 40px;
+
+
+  &:hover {
+    .team-acco__content {
+      height: 7rem;
+      display: flex;
+    }
+
+    .team-acco__title {
+      color: $yellow;
+      transition: 0.5s;
+    }
+    .team-acco__title:before {
+      transform: rotate(180deg);
+      transition: 0.5s;
+    }
+  }
+  &.active {
+    .team-acco__content {
+      height: auto;
+      display: flex;
+    }
+    .team-acco__title {
+      color: $yellow;
+      &:before {
+        transform: rotate(180deg);
+      }
+    }
+  }
+}
+
+.team-acco__about-position {
+  color: #fff;
+  font-family: 'Ubuntu';
+  font-weight: bold;
+  font-size: 14px;
+  text-align: left;
+}
+
+.team-acco__about-text {
+  color: #fff;
+  font-weight: 300;
+  max-width: 72%;
+  text-align: left;
+}
+
+.team-acco__img {
+  padding-left: 17%;
+}
+
+.team-acco__pic {
+  width: 100px;
+  height: 100px;
+  overflow: hidden;
+  border-radius: 50%;
+  position: relative;
+  padding-left: 10px;
+  margin-right: 23px;
+}
+
+.team-acco__avatar {
+  position: absolute;
+  top: 50%;
+  left: 46%;
+  transform: translate(-50%, -50%);
+  height: 100%;
+}
