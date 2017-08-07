@@ -1,9 +1,13 @@
 .wrapper {
   min-height: 100%;
-  overflow: hidden;
+  display: flex;
+  flex-direction: column;
   position: relative;
 }
 
+.main-content {
+  flex: 1;
+}
 
 .container {
   width: 940px;
@@ -31,6 +35,12 @@
   -webkit-transition: .5s;
   -o-transition: .5s;
   transition: .5s;
+  border: none;
+  cursor: pointer;
+  &:focus {
+    border: none;
+    outline: none;
+  }
   &:hover {
     background-color: #cb411b;
   }
@@ -86,4 +96,25 @@
   position: absolute;
   top: -5px;
   left: -5px;
+}
+
+.footer {
+  min-height: 58px;
+  flex: 0 0 auto;
+  background: url('../img/background/footer-bg.jpg') no-repeat center center;
+  background-size: cover;
+  padding: 10px 70px;
+
+  &__address {
+    font-size: 14px;
+    font-weight: 300;
+    color: #fff;
+  }
+
+  &__phone-number {
+    font-weight: bold;
+    font-size: 14px;
+    color: $orange;
+    text-decoration: none;
+  }
 }

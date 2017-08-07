@@ -24,9 +24,11 @@
 
 .menu__item {
   height: 100%;
+  position: relative;
+  display: flex;
   &:hover {
     .menu__content {
-
+      width: 540px;
     }
   }
 }
@@ -101,8 +103,15 @@
 }
 
 .menu__content {
-  font-family: 'Ubuntu';
-  font-weight: 300;
-  color: #fff;
+  width: 0;
+  overflow: hidden;
   background: rgba($black, .93);
+
+  .menu__content-text {
+    font-size: 14px;
+    font-weight: 300;
+    color: #ffffff;
+    padding: 5% 5%;
+    line-height: 30px;
+  }
 }

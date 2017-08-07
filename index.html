@@ -32,7 +32,7 @@
           <li class="navigation__item"><a class="navigation__link" href="">Контакты</a></li>
         </ul>
       </nav>
-      <div class="header__btn"><a class="order" href="">Заказать</a></div>
+      <div class="header__btn"><button class="order">Заказать</button></div>
     </header>
     <div class="content">
       <div class="content__img">
@@ -278,6 +278,94 @@
       </li>
      </ul>
 </section>
+      <section class="section section-order">
+        <div class="container container-form">
+        <div class="form-title">Закажите доставку</div>
+        <div class="form">
+        <form action="">
+          <div class="form-order">
+            <div class="form-left">
+            <div class="input-row">
+              <label class="input-form" for="input-name">
+                <div class="form-order__title">Имя</div>
+                <input class="input-form__input" id="input-name" name="name" type="text">
+              </label>
+              <label class="input-form" for="input-phone">
+                <div class="form-order__title">Телефон</div>
+                <input class="input-form__input" id="input-phone" name="phone" type="text">
+              </label>
+            </div>
+              <div class="input-row">
+                <label class="input-form" for="input-street">
+                  <div class="form-order__title">Улица</div>
+                  <input class="input-form__input" id="input-street" name="street" type="text">
+                </label>
+            </div>
+              <div class="input-row">
+                <label class="input-form" for="input-building">
+                  <div class="form-order__title">Дом</div>
+                  <input class="input-form__input" id="input-building" name="building" type="text">
+                </label>
+                <label class="input-form" for="input-appt">
+                  <div class="form-order__title">Корпус</div>
+                  <input class="input-form__input" id="input-appt" name="appt" type="text">
+                </label>
+                <label class="input-form" for="input-apartment">
+                  <div class="form-order__title">Квартира</div>
+                  <input class="input-form__input" id="input-apartment" name="apartment" type="text">
+                </label>
+                <label class="input-form" for="input-floor">
+                  <div class="form-order__title">Этаж</div>
+                  <input class="input-form__input" id="input-floor" name="floor" type="text">
+                </label>
+              </div>
+            </div>
+            <div class="form-right">
+              <div class="input-row">
+                <label class="input-form" for="input-comment">
+                  <div class="form-order__title">Комментарий</div>
+                  <textarea class="input-form__comment" name="comment" id="input-comment" cols="30" rows="10"></textarea>
+                </label>
+              </div>
+              <div class="input-row">
+                <label class="input-form__radio" for="input-radio__change">
+                  <input class="input-form__radio-btn" id="input-radio__change" name="pay" type="radio">
+                  <div class="input-form__radio-fake"></div>
+                  <div class="form-order__title">Потребуется сдача</div>
+                </label>
+                <label class="input-form__radio" for="input-radio__card">
+                  <input class="input-form__radio-btn" id="input-radio__card" name="pay" type="radio" checked>
+                  <div class="input-form__radio-fake"></div>
+                  <div class="form-order__title">Оплата по карте</div>
+                </label>
+              </div>
+              <div class="input-row">
+                <label class="input-form__radio" for="input-recall">
+                  <input class="input-form__checkbox-btn" id="input-recall" name="no-recall" type="checkbox">
+                  <div class="input-form__checkbox-fake"></div>
+                  <div class="form-order__title">Не перезванивать</div>
+                </label>
+              </div>
+              <div class="input-row">
+                <button class="order">Заказать</button>
+                <button class="btn-clear">Очистить</button>
+              </div>
+            </div>
+          </div>
+          </div>
+        </div>
+        </form>
+        </div>
+        </div>
+      </section>
+  <section class="section section-map">
+    <footer class="footer">
+      <div class="footer__address">Санкт-Петербург, ул.Бабушкина, д.12/1, 15</div>
+      <a class="footer__phone-number" href="tel:+7 (812) 377-13-77">+7 (812) 377-13-77</a>
+      <div class="footer__social"></div>
+    </footer>
+  </section>
+
   </div>
     <div class="points">
       <ul class="points__list">

@@ -1,0 +1,27 @@
+.section-map {
+  background: url('../img/background/map.jpg') no-repeat center center;
+  background-size: cover;
+  position: relative;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background: url('../img/background/footer-bg.jpg') no-repeat center center;
+  background-size: cover;
+  padding: 10px 70px;
+
+  &__address {
+    font-size: 14px;
+    font-weight: 300;
+    color: #fff;
+  }
+
+  &__phone-number {
+    font-weight: bold;
+    font-size: 14px;
+    color: $orange;
+    text-decoration: none;
+  }
+}
