@@ -10,18 +10,65 @@
   width: 100%;
   background: url('../img/background/footer-bg.jpg') no-repeat center center;
   background-size: cover;
-  padding: 10px 70px;
+  padding-top: 10px;
+  padding-left: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 
   &__address {
     font-size: 14px;
     font-weight: 300;
     color: #fff;
+    margin-right: auto;
   }
 
-  &__phone-number {
+  &__phone {
+    padding-top: 10px;
+  }
+
+  &__phone_number {
     font-weight: bold;
     font-size: 14px;
     color: $orange;
     text-decoration: none;
+    position: relative;
+  }
+
+  &__phone-img {
+      fill: #e35028;
+      width: 12px;
+      height: 11px;
+      margin-right: 8px;
+    }
+    }
+
+.social__item {
+  display: inline-flex;
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+.social__logo {
+  fill: #595959;
+  &:hover {
+    fill: #fff;
+    transition: 0.8s;
+  }
+  &_vk {
+    width: 23px;
+    height: 13px;
+  }
+  &_fb {
+    width: 20px;
+    height: 20px;
+  }
+  &_inst {
+    width: 20px;
+    height: 20px;
+  }
+  &_tw {
+    width: 20px;
+    height: 16px;
   }
 }

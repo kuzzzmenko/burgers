@@ -34,9 +34,20 @@
   margin-left: 17px;
 }
 
-.best__item-img {
-  min-height: 39%;
+.best__pic {
+  max-height: 90px;
   margin-bottom: 12px;
+  &.best__pic_meat {
+    fill: #e25028;
+  }
+  &.best__pic_hand {
+    fill: #f9b43b;
+  }
+  &.best__pic_natural {
+    fill: #8ac03e;
+    max-height: 75px;
+    margin-bottom: 25px;
+  }
 }
 
 .best__item-title {
