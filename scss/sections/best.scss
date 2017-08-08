@@ -37,13 +37,13 @@
 .best__pic {
   max-height: 90px;
   margin-bottom: 12px;
-  &.best__pic_meat {
+  &._meat {
     fill: #e25028;
   }
-  &.best__pic_hand {
+  &._hand {
     fill: #f9b43b;
   }
-  &.best__pic_natural {
+  &._natural {
     fill: #8ac03e;
     max-height: 75px;
     margin-bottom: 25px;
