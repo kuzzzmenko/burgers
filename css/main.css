@@ -384,11 +384,11 @@ ul {
 .best__pic {
   max-height: 90px;
   margin-bottom: 12px; }
-  .best__pic.best__pic_meat {
+  .best__pic_meat {
     fill: #e25028; }
-  .best__pic.best__pic_hand {
+  .best__pic_hand {
     fill: #f9b43b; }
-  .best__pic.best__pic_natural {
+  .best__pic_natural {
     fill: #8ac03e;
     max-height: 75px;
     margin-bottom: 25px; }
@@ -942,10 +942,9 @@ ul {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+  -webkit-justify-content: space-around;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
   -webkit-box-align: center;
   -webkit-align-items: center;
   -ms-flex-align: center;
@@ -953,8 +952,7 @@ ul {
   .footer__address {
     font-size: 14px;
     font-weight: 300;
-    color: #fff;
-    margin-right: auto; }
+    color: #fff; }
   .footer__phone {
     padding-top: 10px; }
   .footer__phone_number {

@@ -13,14 +13,13 @@
   padding-top: 10px;
   padding-left: 70px;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
 
   &__address {
     font-size: 14px;
     font-weight: 300;
     color: #fff;
-    margin-right: auto;
   }
 
   &__phone {
