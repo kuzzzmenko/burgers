@@ -10,25 +10,32 @@
   width: 100%;
   background: url('../img/background/footer-bg.jpg') no-repeat center center;
   background-size: cover;
-  padding-top: 10px;
-  padding-left: 70px;
+  padding-top: rem(10px);
+  padding-left: rem(70px);
   display: flex;
   justify-content: space-around;
   align-items: center;
+  @include phones() {
+    flex-direction: column;
+    align-items: center;
+  }
 
   &__address {
-    font-size: 14px;
+    font-size: rem(14px);
     font-weight: 300;
     color: #fff;
   }
 
   &__phone {
-    padding-top: 10px;
+    padding-top: rem(10px);
+    @include phones() {
+      margin-bottom: rem(10px);
+    }
   }
 
   &__phone_number {
     font-weight: bold;
-    font-size: 14px;
+    font-size: rem(14px);
     color: $orange;
     text-decoration: none;
     position: relative;
@@ -36,15 +43,27 @@
 
   &__phone-img {
       fill: #e35028;
-      width: 12px;
-      height: 11px;
-      margin-right: 8px;
+      width: rem(12px);
+      height: rem(11px);
+      margin-right: rem(8px);
     }
+
+  &__left {
+    @include phones() {
+      text-align: center;
     }
+  }
+    }
+
+.social {
+  @include phones() {
+    padding-left: rem(15px);
+  }
+}
 
 .social__item {
   display: inline-flex;
-  margin-right: 20px;
+  margin-right: rem(20px);
   cursor: pointer;
 }
 
@@ -55,19 +74,19 @@
     transition: 0.8s;
   }
   &_vk {
-    width: 23px;
-    height: 13px;
+    width: rem(23px);
+    height: rem(13px);
   }
   &_fb {
-    width: 20px;
-    height: 20px;
+    width: rem(20px);
+    height: rem(20px);
   }
   &_inst {
-    width: 20px;
-    height: 20px;
+    width: rem(20px);
+    height: rem(20px);
   }
   &_tw {
-    width: 20px;
-    height: 16px;
+    width: rem(20px);
+    height: rem(16px);
   }
 }

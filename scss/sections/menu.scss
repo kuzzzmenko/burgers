@@ -9,13 +9,13 @@
 
 .menu__title {
   font-family: 'Gagalin';
-  font-size: 72px;
+  font-size: rem(72px);
   font-weight: normal;
   text-transform: uppercase;
   color: #fff;
   position: absolute;
-  left: 95px;
-  top: 89px;
+  left: rem(95px);
+  top: rem(89px);
 }
 
 .menu__list {
@@ -28,7 +28,10 @@
   display: flex;
   &:hover {
     .menu__content {
-      width: 540px;
+      width: rem(540px);
+      @include phones() {
+        width: 100%;
+      }
     }
   }
 }
@@ -38,7 +41,7 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: right;
-  width: 78px;
+  width: rem(78px);
   height: 100%;
   position: relative;
 }
@@ -46,14 +49,14 @@
 .menu-meat__content-title {
   font-family: 'Gagalin';
   font-weight: normal;
-  font-size: 40px;
+  font-size: rem(40px);
   color: #fff;
   transform: rotate(-90deg);
   display: inline-block;
-  width: 81px;
+  width: rem(81px);
   white-space: nowrap;
   position: absolute;
-  top: 393px;
+  top: rem(393px);
 }
 
 .menu-vegan {
@@ -61,7 +64,7 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: right;
-  width: 80px;
+  width: rem(80px);
   height: 100%;
   position: relative;
 }
@@ -69,14 +72,14 @@
 .menu-vegan__content-title {
   font-family: 'Gagalin';
   font-weight: normal;
-  font-size: 40px;
+  font-size: rem(40px);
   color: #fff;
   transform: rotate(-90deg);
   display: inline-block;
   width: 5rem;
   white-space: nowrap;
   position: absolute;
-  top: 407px;
+  top: rem(407px);
 }
 
 .menu-diet {
@@ -84,7 +87,7 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: right;
-  width: 65px;
+  width: rem(65px);
   height: 100%;
   position: relative;
 }
@@ -92,14 +95,14 @@
 .menu-diet__content-title {
   font-family: 'Gagalin';
   font-weight: normal;
-  font-size: 40px;
+  font-size: rem(40px);
   color: #fff;
   transform: rotate(-90deg);
   display: inline-block;
   width: 5rem;
   white-space: nowrap;
   position: absolute;
-  top: 380px;
+  top: rem(380px);
 }
 
 .menu__content {
@@ -108,10 +111,10 @@
   background: rgba($black, .93);
 
   .menu__content-text {
-    font-size: 14px;
+    font-size: rem(14px);
     font-weight: 300;
     color: #ffffff;
     padding: 5% 5%;
-    line-height: 30px;
+    line-height: rem(30px);
   }
 }

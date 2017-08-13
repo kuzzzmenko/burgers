@@ -1,0 +1,203 @@
+.burgers {
+  background: linear-gradient(180deg, #f9b43b 0, #eb8c38 40%, #eb8c38 60%, #eb8c38 0, #f9b43b);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.burgers-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.burgers__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.arrow__scroll-left {
+  padding-left: rem(90px);
+}
+
+.arrow__scroll_right {
+  padding-right: rem(90px);
+}
+
+.burgers__left {
+  display: flex;
+  align-items: center;
+  width: 50%;
+  justify-content: center;
+}
+
+.burgers__compound {
+  background-color: rgba(227, 80, 40, 0.4);
+  width: rem(90px);
+  height: rem(90px);
+  border-radius: rem(5px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: absolute;
+  top: 0;
+  left: 0;
+  cursor: pointer;
+  &:hover .ingridients {
+    width: rem(270px);
+    height: rem(332px);
+    display: table-cell;
+  }
+}
+
+.burgers__compound-img {
+  width: rem(46px);
+  height: rem(44px);
+  fill: #fff;
+  margin-bottom: rem(5px);
+}
+
+.burgers__compound-title {
+  font-family: 'Gagalin';
+  font-size: rem(14px);
+  color: #ffffff;
+  -webkit-font-smoothing: antialiased;
+}
+
+.burgers__kcal {
+  height: rem(70px);
+  width: rem(60px);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  opacity: 0.5;
+}
+
+.burgers__kcal-img {
+  width: rem(60px);
+  height: rem(60px);
+  fill: #fff;
+  position: relative;
+}
+
+.kcal-amount {
+  color: #fff;
+  font-family: 'Gagalin';
+  font-size: rem(20px);
+  position: absolute;
+  top: 38%;
+  left: 23%;
+  -webkit-font-smoothing: antialiased;
+}
+
+.burgers__kcal-title {
+  font-family: 'Gagalin';
+  font-size: rem(14px);
+  color: #ffffff;
+  text-align: center;
+  -webkit-font-smoothing: antialiased;
+}
+
+.burgers__right {
+  padding-bottom: rem(125px);
+  width: 50%;
+}
+
+.burgers__right-title {
+  font-family: 'Gagalin';
+  font-size: rem(72px);
+  color: #ffffff;
+  -webkit-font-smoothing: antialiased;
+  line-height: rem(65px);
+  width: 60%;
+}
+
+.burgers__right-text {
+  font-size: rem(14px);
+  color: #fff;
+  line-height: rem(30px);
+  width: 84%;
+}
+
+
+.burgers__right-price {
+  display: flex;
+  align-items: center
+}
+
+.price {
+  font-family: 'Gagalin';
+  text-transform: uppercase;
+  color: $orange;
+  font-size: rem(72px);
+  line-height: rem(60px);
+  width: 48%;
+}
+
+.price__value {
+  font-size: rem(30px);
+}
+
+//ingridients table
+
+.ingridients {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 90px;
+  width: 0;
+  height: 0;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 5px;
+  padding-top: rem(15px);
+}
+
+.ingridiets-table {
+  width: 100%;
+  height: 100%;
+}
+
+.ingridients-table__img {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: rem(10px);
+}
+
+.ingridients__img {
+  &_beef {
+    height: rem(39px);
+    width: rem(44px);
+    fill: $orange;
+  }
+  &_buns {
+    width: 50px;
+    height: 30px;
+    fill: $yellow;
+  }
+  &_salad {
+    width: 38px;
+    height: 38px;
+    fill: $green;
+  }
+  &_sauce {
+    width: 41px;
+    height: 43px;
+    fill: $orange;
+  }
+  &_cucumber {
+    width: 43px;
+    height: 37px;
+    fill: $green;
+  }
+  &_cheese {
+    width: 39px;
+    height: 34px;
+    fill: $yellow;
+  }
+}

@@ -11,8 +11,8 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-top: 7px;
-  padding-left: 4px;
+  padding-top: rem(7px);
+  padding-left: rem(4px);
 }
 
 .header__logo {
@@ -24,12 +24,19 @@
 }
 
 .header__btn {
-  width: 97px;
-  padding-left: 6px;
+  width: rem(97px);
+  padding-left: rem(6px);
+  @include tablets() {
+    padding-left: 0;
+    padding-right: 165px;
+  }
 }
 
 .navigation {
-  margin-right: 10px;
+  margin-right: rem(10px);
+  @include tablets() {
+    display: none;
+  }
 }
 
 .navigation__list {
@@ -45,8 +52,8 @@
     display: inline-block;
     vertical-align: middle;
     content: ' ';
-    @include circle(5px, #fff);
-    margin: 0 14px;
+    @include circle(rem(5px), #fff);
+    margin: 0 rem(14px);
   }
   &:last-child:after {
     display: none;
@@ -55,7 +62,7 @@
 
 .navigation__link {
   color: #ffffff;
-  font-size: 13px;
+  font-size: rem(13px);
   font-weight: 500;
   line-height: 1.42;
   text-transform: uppercase;
@@ -68,6 +75,9 @@
   }
 }
 
+.menu-hamburger {
+  display: none;
+}
 
 .main-container {
   display: flex;
@@ -83,44 +93,85 @@
   flex: 1;
   justify-content: center;
   padding-bottom: 17%;
+
+  @include tablets() {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 5%;
+  }
 }
 
 .content__img, .content__about {
   flex-basis: 50%;
   display: flex;
-  margin-right: 32px;
+  margin-right: rem(32px);
+
+  @include tablets() {
+    margin: 0;
+  }
 }
 
 .content__img {
   align-items: center;
+  padding-left: rem(23px);
+
+  @include tablets() {
+    padding: 0;
+    margin-bottom: rem(35px);
+  }
+  @include phones() {
+    width: 70%;
+  }
+}
+
+.content__img-burger {
+  display: block;
+  max-width: 100%;
   margin: 0 auto;
-  padding-left: 23px;
 }
 
 .content__about {
   flex-direction: column;
   justify-content: center;
-  padding-left: 13px;
+  padding-left: rem(13px);
+
+  @include tablets() {
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+    padding-top: rem(20px);
+  }
 }
 
 .content__about-title {
   color: $yellow;
   font-family: 'Gagalin';
-  font-size: 72px;
+  font-size: rem(72px);
   font-weight: 400;
   line-height: 1.42;
-  padding-top: 64px;
-  margin-bottom: 5px;
+  padding-top: rem(64px);
+  margin-bottom: rem(5px);
   -webkit-font-smoothing: antialiased;
+  @include tablets() {
+    padding-top: 0;
+  }
 }
 
 .content__about-text {
   color: #ffffff;
   font-family: 'Lifehack';
-  font-size: 65px;
+  font-size: rem(65px);
   font-weight: 500;
   line-height: 1;
   -webkit-font-smoothing: antialiased;
+  @include tablets() {
+    width: rem(500px);
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
 }
 
 .arrow-next {

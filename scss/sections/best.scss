@@ -2,7 +2,7 @@
 .best {
   background: url('../img/background/best-bg.jpg') no-repeat center center;
   background-size: cover;
-  min-height: 650px;
+  min-height: rem(650px);
   width: 100%;
   display: flex;
   text-align: center;
@@ -11,32 +11,58 @@
 }
 
 .best-container {
-  padding-bottom: 110px;
+  padding-bottom: rem(110px);
 }
 
 .best__title {
   color: $dark;
   font-family: 'Gagalin';
-  font-size: 72px;
+  font-size: rem(72px);
   font-weight: normal;
   -webkit-font-smoothing: antialiased;
-  margin-bottom: 62px;
-  padding-left: 14px;
+  margin-bottom: rem(62px);
+  padding-left: rem(14px);
 }
 
 .best__list {
   display: flex;
   justify-content: center;
+  @include phones() {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 .best__item {
   width: 33%;
-  margin-left: 17px;
+  margin-left: rem(17px);
+  @include phones() {
+    display: flex;
+    flex-direction: row;
+    width: 77%;
+    margin-bottom: rem(20px);
+  }
+}
+
+.best__item-about {
+  @include phones() {
+    text-align: left;
+  }
+}
+
+.best__item-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  @include phones() {
+    margin-right: rem(20px);
+  }
 }
 
 .best__pic {
-  max-height: 90px;
-  margin-bottom: 12px;
+  width: rem(92px);
+  max-height: rem(100px);
+  margin-bottom: rem(12px);
   &_meat {
     fill: #e25028;
   }
@@ -45,21 +71,21 @@
   }
   &_natural {
     fill: #8ac03e;
-    max-height: 75px;
-    margin-bottom: 25px;
+    max-height: rem(75px);
+    margin-bottom: rem(25px);
   }
 }
 
 .best__item-title {
   color: #2f3234;
   font-family: 'Lifehack';
-  font-size: 24px;
+  font-size: rem(24px);
   font-weight: normal;
   -webkit-font-smoothing: antialiased;
 }
 
 .best__item-text {
   font-weight: 300;
-  font-size: 14px;
-  line-height: 25px;
+  font-size: rem(14px);
+  line-height: rem(25px);
 }
