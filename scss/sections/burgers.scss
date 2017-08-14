@@ -12,11 +12,25 @@
   flex-direction: row;
 }
 
+.burgers__list {
+  @include phones() {
+    padding-top: rem(50px);
+  }
+}
+
 .burgers__item {
   display: flex;
   justify-content: center;
   align-items: center;
   position: relative;
+  @include tablets() {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding-top: 115px;
+  }
 }
 
 .arrow__scroll-left {
@@ -34,6 +48,10 @@
   justify-content: center;
 }
 
+.burgers__img-pic {
+  min-width: 100%;
+}
+
 .burgers__compound {
   background-color: rgba(227, 80, 40, 0.4);
   width: rem(90px);
@@ -47,10 +65,21 @@
   top: 0;
   left: 0;
   cursor: pointer;
+  @include tablets() {
+    top: 5%;
+  }
+  @include phones() {
+    left: 7%;
+  }
   &:hover .ingridients {
     width: rem(270px);
     height: rem(332px);
     display: table-cell;
+    @include phones() {
+      height: rem(400px);
+      width: rem(450px);
+      text-align: left;
+    }
   }
 }
 
@@ -75,6 +104,13 @@
   bottom: 0;
   left: 0;
   opacity: 0.5;
+  @include tablets() {
+    top: 5%;
+    left: 85%;
+  }
+  @include phones() {
+    left: 83%;
+  }
 }
 
 .burgers__kcal-img {
@@ -105,7 +141,15 @@
 .burgers__right {
   padding-bottom: rem(125px);
   width: 50%;
-}
+  @include tablets() {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  }
+
 
 .burgers__right-title {
   font-family: 'Gagalin';
@@ -126,7 +170,11 @@
 
 .burgers__right-price {
   display: flex;
-  align-items: center
+  align-items: center;
+  @include tablets() {
+    justify-content: center;
+    width: 100%;
+  }
 }
 
 .price {
@@ -148,12 +196,15 @@
   display: none;
   position: absolute;
   top: 0;
-  left: 90px;
+  left: rem(90px);
   width: 0;
   height: 0;
   background-color: rgba(255, 255, 255, 0.9);
   border-radius: 5px;
   padding-top: rem(15px);
+  @include tablets() {
+    left: rem(90px);
+  }
 }
 
 .ingridiets-table {

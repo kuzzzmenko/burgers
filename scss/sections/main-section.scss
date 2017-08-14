@@ -28,7 +28,6 @@
   padding-left: rem(6px);
   @include tablets() {
     padding-left: 0;
-    padding-right: 165px;
   }
 }
 
@@ -73,10 +72,6 @@
   &:hover {
     color: #f9b43b;
   }
-}
-
-.menu-hamburger {
-  display: none;
 }
 
 .main-container {
