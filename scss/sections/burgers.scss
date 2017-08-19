@@ -5,12 +5,18 @@
   justify-content: center;
 }
 
-.burgers-content {
+.burgers-container {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: row;
+  max-width: 70%;
+  position: relative;
+  @include phones() {
+    max-width: 100%;
+  }
 }
+
 
 .burgers__list {
   @include phones() {
@@ -33,23 +39,32 @@
   }
 }
 
-.arrow__scroll-left {
-  padding-left: rem(90px);
+.arrow-scroll {
+  position: absolute;
+}
+.arrow-scroll__left {
+  left: -2%;
+  @include phones() {
+    left: 0;
+  }
 }
 
-.arrow__scroll_right {
-  padding-right: rem(90px);
+.arrow-scroll__right {
+  left: 100%;
+  @include phones() {
+    left: 95%;
+  }
 }
 
 .burgers__left {
   display: flex;
   align-items: center;
-  width: 50%;
+  max-width: 100%;
   justify-content: center;
 }
 
 .burgers__img-pic {
-  min-width: 100%;
+  max-width: 100%;
 }
 
 .burgers__compound {
@@ -76,8 +91,8 @@
     height: rem(332px);
     display: table-cell;
     @include phones() {
-      height: rem(400px);
-      width: rem(450px);
+      height: rem(380px);
+      width: rem(315px);
       text-align: left;
     }
   }
@@ -157,14 +172,14 @@
   color: #ffffff;
   -webkit-font-smoothing: antialiased;
   line-height: rem(65px);
-  width: 60%;
+  width: 100%;
 }
 
 .burgers__right-text {
   font-size: rem(14px);
   color: #fff;
   line-height: rem(30px);
-  width: 84%;
+  width: 100%;
 }
 
 
@@ -183,7 +198,7 @@
   color: $orange;
   font-size: rem(72px);
   line-height: rem(60px);
-  width: 48%;
+  width: 50%;
 }
 
 .price__value {

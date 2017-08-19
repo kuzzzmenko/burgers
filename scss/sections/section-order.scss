@@ -60,7 +60,7 @@
 }
 
 .form-right {
-  width: rem(500px);
+  width: 100%;
   @include phones() {
     display: flex;
     flex-direction: column;
@@ -70,6 +70,7 @@
 .input-row {
   display: flex;
   flex-direction: row;
+  width: 100%;
 }
 
 .input-form {
@@ -104,7 +105,7 @@
     outline: none;
   }
   @include phones() {
-    width: rem(470px);
+    max-width: rem(465px);
   }
 }
 

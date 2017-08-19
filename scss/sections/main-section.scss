@@ -106,6 +106,9 @@
   @include tablets() {
     margin: 0;
   }
+  @include phones() {
+    flex-basis: 0;
+  }
 }
 
 .content__img {
@@ -118,6 +121,7 @@
   }
   @include phones() {
     width: 70%;
+    margin-bottom: rem(220px);
   }
 }
 
